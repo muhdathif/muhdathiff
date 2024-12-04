@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lucida Console;
+}
+
+
+header {
+  background-image: url('images/background.gif');
+
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-image: url('images/background2.gif');
+  height: auto;
+  <a name="top"></a>
+
+  .content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .gallery, .videos {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .gallery h2, .videos h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: #39045f;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery .images, .videos .video-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery .images img, .videos .video-items video {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery .images img:hover, .videos .video-items video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+     
+        }
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            
+        }
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        } 
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+ background-image: url('images/background.gif');
+
+  padding: 50px;
+  text-align: center;
+  color: white;
+  bottom: 0;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>My Gallery</h2>
+</header>
+
+<section>
+  
+  <article>
+    <div class="content">
+        <div class="gallery">
+            <h2>These Photos Mean a Lot</h2>
+            <div class="images">
+                <img src="images/gallery1.jpg" alt="Photo 1">
+                <img src="images/gallery2.jpg" alt="Photo 2">
+                <img src="images/gallery3.jpg" alt="Photo 3">
+                <img src="images/gallery4.jpg" alt="Photo 4">
+                <img src="images/raya.jpg" alt="Photo 5">
+                <img src="images/gambarmak.jpg" alt="Photo 6">
+                <img src="video/gallery1.jpg" alt="photo 7">
+                <img src="images/gambarfamily.jpg" alt="Photo 8">
+                <img src="images/gallery5.jpg" alt="Photo 9">
+                <img src="images/gallery6.jpg" alt="Photo 10">
+                <img src="images/gallery7.jpg" alt="Photo 11">
+                <img src="images/gallery8.jpg" alt="Photo 12">
+                <img src="images/gallery9.jpg" alt="Photo 13">
+                <img src="images/gallery10.jpg" alt="Photo 14">
+                <img src="images/gallery11.jpg" alt="Photo 15">
+                <img src="images/gallery12.jpg" alt="Photo 16">
+                <img src="images/gallery13.jpg" alt="Photo 17">
+                <img src="images/gallery14.jpg" alt="Photo 18">
+                <img src="images/gallery15.jpg" alt="Photo 19">
+                <img src="images/gallery16.jpg" alt="Photo 20">
+                <img src="images/gallery17.jpg" alt="Photo 21">
+                <img src="images/gallery18.jpg" alt="Photo 22">
+                <img src="images/gallery19.jpg" alt="Photo 23">
+                <img src="images/gallery20.jpg" alt="Photo 24">
+                <img src="images/gallery21.jpg" alt="Photo 25">
+            </div>
+            <a href="#top"<center><img src="images/arrow.png" style="width:42px;height:42px;"</center></a>
+
+
+  </article>
+</section>
+
+
+</body>
+</html>
+

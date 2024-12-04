@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lucida Console;
+}
+
+
+header {
+  background-image: url('images/background.gif');
+
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-image: url('images/background2.gif');
+  height: auto; 
+  color: black;
+  
+  
+  .tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#Internship {background-image: url('images/bk.gif');}
+#Karisma {background-image: url('images/bk.gif');}
+#MSSPK {background-image: url('images/bk.gif');}
+#Other {background-image: url('images/bk.gif');}
+  
+ 
+  }
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+ background-image: url('images/background.gif');
+
+  padding: 50px;
+  text-align: center;
+  color: white;
+  bottom: 0;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>My Experience</h2>
+</header>
+
+<section>
+  
+  <article>
+   <center>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+<div id="Internship" class="tabcontent">
+  <h1>Internship</h1>
+  <p>In previous month, i have done my internship at Pejabat Pendidikan Daerah Bagan Datuk. I was assigned at Management Department. Then i was also assigned to It Department sometimes. I was very happy with enviroment and healthy officemate. Here's my memories at there. </p>
+<img src="images/intern.jpg" width="350" height="200">
+  <img src="images/intern2.jpg" width="350" height="200">
+  <img src="images/intern3.jpg" width="350" height="200">
+  <img src="images/intern4.jpg" width="350" height="200">
+  <video src="video/intern.mov" width="350" height="200" controls >
+</div>
+
+<div id="Karisma" class="tabcontent">
+  <h1>Karisma 2023</h1>
+  <p>I was participated in Karisma UITM 2023 and representing UITM Kedah for volleyball team. Unfortunately, we lose</p>
+  <img src="images/karisma.jpg" width="350" height="200">
+  <img src="images/karisma2.jpg" width="350" height="200">
+  <img src="images/karisma3.jpg" width="350" height="200">
+  <img src="images/karisma4.jpg" width="350" height="200">
+  <video src="video/karisma.mov" width="350" height="200" controls > 
+</div>
+
+<div id="MSSPK" class="tabcontent">
+  <h1>Majlis Sukan Sekolah Perak</h1>
+  <p>I represented my school and district on 2019 until 2021.</p>
+  <img src="images/msspk.jpg" width="350" height="200">
+  <img src="images/masspk2.jpg" width="350" height="200">
+  <img src="images/msspk3.jpg" width="350" height="200">
+  <img src="images/msspk4.jpg" width="350" height="200">
+  <img src="images/gallery9.jpg" width="350" height="200">
+
+
+</div>
+
+<div id="Other" class="tabcontent">
+  <h1>My Others Job</h1>
+  <p> I have done a lot of side jobs such as waiter, cleaner, operator, and more.</p>
+  <img src="images/keje.jpg" width="350" height="200">
+  <img src="images/keje2.jpg" width="350" height="200">
+  <img src="images/keje3.jpg" width="350" height="200">
+  <img src="images/keje4.jpg" width="350" height="200">
+</div>
+
+
+<button class="tablink" onclick="openCity('Internship', this, 'black')" id="defaultOpen">Internship</button>
+<button class="tablink" onclick="openCity('Karisma', this, 'black')">Karisma</button>
+<button class="tablink" onclick="openCity('MSSPK', this, 'black')">Majlis Sukan Perak</button>
+<button class="tablink" onclick="openCity('Other', this, 'black')">Other Works</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   </center>
+  </article>
+</section>
+
+<footer>
+  <p>This website is created for my IMD318 Individual Assignment</p>
+</footer>
+
+</body>
+</html>
+

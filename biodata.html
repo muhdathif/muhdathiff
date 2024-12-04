@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lucida Console;
+}
+
+
+header {
+  background-image: url('images/background.gif');
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  table, th, td {
+  border:1px solid black;
+}
+}
+
+article {
+  float: left;
+  padding: 70px;
+  width: 100%;
+  background-image: url('images/background2.gif');
+  height: auto; 
+  font-size: 20px;
+  <a name="top"></a>
+
+   
+
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-image: url('images/background.gif');
+  padding: 50px;
+  text-align: center;
+  color: white;
+  bottom: 0;
+  
+
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body onload="startTime()">
+
+
+<header>
+  <h2>My Biodata</h2>
+</header>
+
+<section>  
+  <article>
+   <center>
+    <style>
+    table, th, td {
+  border:3px solid black;
+  background-color: white;
+}
+</style>
+
+<div id="txt"></div>
+    <h1><mark>My Background</mark></h1>
+    <img src="images/atep.jpg" alt="atep" width="400" height="500">
+    <table style="width:40%">
+  <tr>
+    <td><b>Name</b></td>
+    <td>Muhammad Athif Bin Saifol Bahri</td>
+  </tr>
+  <tr>
+    <td><b>Age</b></td>
+    <td>20</td>
+   </tr>
+    <tr>
+    <td><b>Birth Date</b></td>
+    <td>30 October 2004</td>
+  </tr>
+   <tr>
+    <td><b>State</b></td>
+    <td>Perak</td>
+  </tr>
+   <tr>
+    <td><b>Hobby</b></td>
+    <td>Play Volleyball</td>
+  </tr>
+   <tr>
+    <td><b>Interest</b></td>
+    <td>Ride a Motorcycle with My Friends</td>
+  </tr>
+   <tr>
+    <td><b>Favorite Food</b></td>
+    <td>Fried Rice</td>
+  </tr>
+</table>
+ 
+    <h2><mark>My Favorite Song</mark></h2>
+
+<iframe src="https://www.youtube.com/embed/dQJgTmjqePY?si=VAe1IRJOPpqOiyKl" width="350" height="400" control>
+</iframe>
+
+  <h3><mark>My Social Media</mark></h3>
+  <a href="https://www.instagram.com/muhdatep/?__pwa=1" target="_blank">Instagram<br><img src="images/ig.gif" alt="Instagram " style="width:100px;height:100px;"></a><br> <a href="https://www.facebook.com/share/15BgrkLSEG/?mibextid=LQQJ4d" target="_blank">Facebook<br><img src="images/fb.gif" alt="Instagram " style="width:100px;height:100px;"></a><br><a href="https://www.tiktok.com/@entahlemat?_t=8rgycOlICCS&_r=1" target="_blank">TikTok<br><img src="images/tiktok.gif" alt="TikTok " style="width:100px;height:100px;"></a>
+<br>
+<a href="#top"<center><img src="images/arrow.png" style="width:42px;height:42px;"</center></a>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script>
+
+
+   </center>
+  </article>
+</section>
+
+<footer>
+  <p>This website is created for my IMD318 Individual Assignment</p>
+</footer>
+
+</body>
+</html>
